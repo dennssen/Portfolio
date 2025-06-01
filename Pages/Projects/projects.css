@@ -1,0 +1,134 @@
+@font-face {
+    font-family: moyudan;
+    src: url(../../Assets/Fonts/moyudan.regular.ttf);
+}
+
+body {
+    font-family: moyudan;
+    margin: 0;
+}
+
+:root {
+    --sidenav-size: 280px;
+}
+
+.seperator {
+    margin: 0 auto;
+    width: 75%;
+    border-top: 3px black solid;
+    border-radius: 5px;
+}
+
+.sidenav {
+    height: 100%;
+    width: var(--sidenav-size);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: 2px black solid;
+}
+
+.sidenav img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px black solid;
+    width: 75px;
+    height: 75px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #808080;
+}
+
+.sidenav #bottom {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.sidenav #bottom a {
+    font-size: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.main {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: var(--sidenav-size);
+    padding: 0px 10px;
+    height: 100vh;
+}
+
+.main h1 {
+    margin: 0;
+    font-size: 100px;
+}
+
+.projects {
+    position: relative;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    padding: 10px;
+    height: 80%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 25px;
+    color: black;
+}
+
+.project #title {
+    width: 100%;
+    align-self: flex-end;
+    text-align: center;
+    font-size: 2.2em;
+    background-color: rgba(16, 16, 16, 0.3);
+}
+
+.project img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+.project:hover {
+    cursor: pointer;
+    background-color: rgb(194, 194, 194);
+}
