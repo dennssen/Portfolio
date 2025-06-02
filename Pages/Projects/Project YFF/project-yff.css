@@ -1,0 +1,141 @@
+@font-face {
+    font-family: moyudan;
+    src: url(../../../Assets/Fonts/moyudan.regular.ttf);
+}
+
+body {
+    font-family: moyudan;
+    margin: 0;
+}
+
+:root {
+    --sidenav-size: 280px;
+}
+
+.sidenav {
+    height: 100%;
+    width: var(--sidenav-size);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: 2px black solid;
+}
+
+.sidenav img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px black solid;
+    width: 75px;
+    height: 75px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #808080;
+}
+
+.sidenav #bottom {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.sidenav #bottom a {
+    font-size: 20px;
+}
+
+.seperator {
+    margin: 0 auto;
+    width: 75%;
+    border-top: 3px black solid;
+    border-radius: 5px;
+}
+
+.main {
+    margin-bottom: 10vh;
+    position: relative;
+    margin-left: var(--sidenav-size);
+    padding: 0px 30px;
+    height: minmax(100vh, max-height);
+}
+
+.main h1 {
+    margin: 0;
+    font-size: 100px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.tag {
+    width: fit-content;
+    margin-right: 15px;
+    background-color: rgb(206, 206, 206);
+    border: 3px dotted rgb(185, 185, 185);
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.tag p {
+    margin: 5px;
+}
+
+.container {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    border: 2px black;
+    border-style: dashed;
+}
+
+.left,
+.right {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.left img,
+.right img {
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 15%;
+    max-width: 75%;
+    height: auto;
+    display: block;
+}
+
+.left p,
+.right p {
+    text-align: center;
+}
+
+.desc {
+    margin: 0;
+    color: #808080;
+    font-size: 20px;
+}
