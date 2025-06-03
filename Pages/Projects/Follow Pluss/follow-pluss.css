@@ -82,6 +82,12 @@ body {
     font-size: 100px;
 }
 
+.main a {
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+}
+
 .tags {
     display: flex;
     flex-direction: row;

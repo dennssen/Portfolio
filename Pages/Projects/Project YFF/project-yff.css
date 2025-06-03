@@ -77,6 +77,12 @@ body {
     height: minmax(100vh, max-height);
 }
 
+.main a {
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+}
+
 .main h1 {
     margin: 0;
     font-size: 100px;
