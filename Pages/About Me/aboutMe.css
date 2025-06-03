@@ -89,6 +89,18 @@ body {
 }
 
 .main h1 {
-    margin: 0;
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
     font-size: 100px;
+}
+
+.main p {
+    font-size: 40px;
+    text-align: center;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
